@@ -1,0 +1,69 @@
+/*
+#12130F --> body background
+#F8F8F8 --> branco (texto)
+#C233FF --> roxo principal
+#000000 --> preto 00000
+rgba(248, 248, 248, 0.6) --> branco opaco p/ seprações
+*/
+
+html {
+    font-size: 62.50%;
+}
+
+body {
+    margin: 0;
+    height: 1000px;
+
+    background-color: #12130F;
+    color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#song-menu {
+    width: 96vw;
+    height: 5rem;
+
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    margin-left: 1vw;
+
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-color: rgba(248, 248, 248, 0.6);
+}
+
+.menu {
+    width: 112px;
+    height: 100vh;
+
+    background-color: #000000;
+    border-right: solid;
+    border-right-color: rgba(248, 248, 248, 0.6);
+
+    position: fixed;
+}
+
+
+
+    .menu-item > img {
+        width: 45%;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 20px;
+    }
+
+    #liked-songs {
+        margin-top: 28px;
+    }
+
+    .menu-item:hover {
+        opacity: 0.8;
+    }
+
+    #history {
+        margin-top: 28px;
+    }
