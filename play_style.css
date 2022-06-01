@@ -14,6 +14,9 @@ body{
     font-family: Be Vietnam Pro;
     color: #F8F8F8;
     background-color: #12130F;
+    background-image: url(/assets/background_flex.png);
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
 }
 
 /* Topbar */
@@ -64,6 +67,64 @@ header{
 #icon-micro{
     padding: 1.6rem 0rem 1.6rem 1.6rem;
     height: 2.4rem;
+}
+
+/* Menu Esquerdo */
+a {
+    text-transform: none;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #000000;
+    position: fixed;
+    border-color: rgba(248, 248, 248, 60%);
+}
+    
+.menu-item > img, #profile {
+    width: 40%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 3rem;
+}
+    
+.menu-item:hover {
+    opacity: 0.8;
+}
+    
+#liked-songs, #history {
+    margin-top: 28px;
+}
+    
+#liked-songs, #history, #make-playlist {
+    width: 13rem;
+}
+    
+#profile {
+    width: 6rem;
+    height: 6rem;
+    background-image: url(assets/artistas/profile_pic_cadu116.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+    margin-left: 2rem;
+    border: solid;
+    border-width: 0.25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+    
+#main-menu {
+    width: 112px;
+    height: 100vh;
+    background-color: #000000;
+    border-right: solid;
+    border-right-color: rgba(248, 248, 248, 60%);
 }
 
 /* Capa e informações da playlist */
@@ -166,7 +227,7 @@ h1 {
 
 .nome-musica{
     width: 26.7rem;
-    padding: 2.1rem 0rem 0.8rem 0.8rem;
+    margin: 2.1rem 0rem 0.8rem 0.8rem;
 }
 
 .txt-artista{
@@ -180,20 +241,21 @@ h1 {
 
 .coracao-rosa{
     height: 3.2rem;
-    padding: 2.5rem 5.846rem 6.4rem 4rem;
+    margin: 4.3rem 5.846rem 6.4rem 4rem;
 }
 
 .album{
     width: 29.3rem;
-    padding: 1.6rem 6.8rem 7.2rem 0rem;
+    margin: 1.6rem 6.8rem 7.2rem 0rem;
 }
 
 .tempo-musica{
     width: 4.9rem;
-    padding: 1.6rem 12.2rem 0rem 0rem;
+    margin: 1.6rem 11.8rem 0rem 0rem;
+    text-align: left;
 }
 
 .icon-tres-ponts{
     height: 3.3rem;
-    padding: 2.9rem 17.198rem 6.4rem 0rem;
+    margin: 1.6rem 0rem 6.4rem 0rem;
 }
