@@ -1,0 +1,228 @@
+/* Formatação Geral */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Be Vietnam Pro;
+    color: #F8F8F8;
+    background-color: #12130F;
+    background-image: url(/assets/background_flex.png);
+    background-size: 120% 100%;
+}
+
+/* Topbar */
+header{
+    width: 90.52vw;
+    height: 5.6rem;
+    background-color: #000000;
+    border-bottom: 1px solid #D1D1D1;
+    margin: 0rem 0rem 0rem 11.2rem;
+    display: flex;
+    position: fixed;
+}
+#header-dimen{
+    width: 90.52vw;
+    height: 5.6rem;
+    margin-bottom: 6.4rem;
+}
+
+#botao-avancar{
+    height: 3.2rem;
+    padding: 1.2rem 0.8rem 1.2rem 9.2rem;
+    display: flex;
+}
+
+#botao-avancar-dir{
+    padding: 0rem 0rem 0rem 0.8rem;
+}
+
+#barra-de-pesquisa{
+    display: flex;
+    width: 57.6rem;
+    height: 4rem;
+    margin: 0.8rem 0rem 0.8rem 6.4rem;
+    border-radius: 15rem;
+    background-color: #F8F8F8;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:#D1D1D1;
+}
+
+#barra-txt{
+    padding: 0.8rem 10.5rem 0.8rem 1.6rem;
+}
+
+#icon-lupa{
+    height: 2.4rem;
+    position: relative;
+    top: 0.8rem;
+    left: 5rem;
+    bottom: 0.8rem;
+}
+
+#icon-micro{
+    padding: 1.6rem 0rem 1.6rem 1.6rem;
+    height: 2.4rem;
+}
+
+/* Música mais escutada */
+h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 7.1rem;
+    margin: 0rem 0rem 3.2rem 24.8rem;
+}
+
+.bloco-roxo-dimen{
+    margin: 0rem 6.4rem 6.4rem 24.8rem;
+}
+
+.bloco-roxo{
+    width: 49.8rem;
+    height: 12rem;
+    display: flex;
+    background-color: #C233FF;
+    border-radius: 1.6rem;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 63%);
+}
+
+.titulo-bloco-roxo{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 1.6rem;
+}
+
+#aliciakeys-img{
+    height: 8.8rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+    border-radius: 1rem;
+    margin: 1.5rem 1.6rem;
+}
+
+.musica-mais-ouv{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin: 3.1rem 7.2rem 0.8rem 0rem;
+}
+
+.artista-bloco-txt{
+    font-weight: 400;
+    font-style: italic;
+    color: #D1D1D1;
+    margin: 0rem 0rem 3.1rem 0rem;
+}
+
+.coracao-cinza{
+    height: 5.2rem;
+    padding: 3.4rem 1.6rem 3.4rem 0rem;
+}
+
+.botao-play-cinza{
+    height: 5.6rem;
+    margin: 3.2rem 3.2rem 3.2rem 0rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+    border-radius: 10rem;
+}
+
+#coldplay-img{
+    height: 9.6rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+    border-radius: 10rem;
+    margin: 1.2rem 1.6rem;
+}
+
+#coldplay-artista{
+    width: 10.8rem;
+    font-size: 2.2rem;
+    margin: 4.5rem 7.8rem 4.5rem 0rem;
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+/* Info sobre a lista */
+.cabecalho-musica{
+    margin-top: 4.8rem;
+}
+
+.data-hist{
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 2.5rem;
+    color: #ABD2EF;
+    margin: 0rem 0rem 0.8rem 24.8rem;
+}
+
+.linha-divisoria{
+    width: 92.15rem;
+    border: 1px solid #ABD2EF;
+    margin: 0rem 16.8rem 0.8rem 24.8rem;
+}
+
+/* Lista de Músicas */
+.txt-padrao{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.53rem;
+}
+
+.musicas-flex{
+    display: flex;
+    height: 9.6rem;
+}
+
+.capa-musica{
+    height: 7.2rem;
+    margin: 1.6rem 0.8rem 2.4rem 24.8rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.nome-musica{
+    width: 26.7rem;
+    margin: 2.1rem 0rem 0.8rem 0.8rem;
+}
+
+.txt-artista{
+    width: 26.7rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgba(248, 248, 248, 60%);
+    padding: 0.8rem 0rem 3rem 0.8rem;
+    font-style: italic;
+}
+
+.coracao-rosa{
+    height: 3.2rem;
+    margin: 2.7rem 5.846rem 6.4rem 4rem;
+}
+
+.album{
+    width: 29.3rem;
+    margin: 2.3rem 6.8rem 7.2rem 0rem;
+}
+
+.tempo-musica{
+    width: 4.9rem;
+    margin: 1.6rem 12rem 7.2rem 0rem;
+}
+
+.icon-tres-ponts{
+    width: 0.8rem;
+    height: 3.3rem;
+    margin: 1.8rem 8.4rem 6.4rem 0rem;
+}
+
+.icon-lixeira{
+    height: 3.8rem;
+    margin: 1rem 5.6rem 6.8rem 0rem;
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul</title>
+    <link rel="stylesheet" href="hist_style.css">
+</head>
+<body>
+    <header>
+        <div id="botao-avancar">
+            <a href=""><img src="assets/botoes/avancar_esq.svg" alt="ícone avançar"></a>
+            <a href=""><img src="assets/botoes/avancar_dir.svg" alt="ícone avançar" id="botao-avancar-dir"></a>
+        </div>
+        
+        <div id="barra-de-pesquisa">
+            <p id="barra-txt">Pesquise artistas, músicas, podcasts ou letras</p>
+            <img src="assets/icons/lupa_cinza.svg" alt="ícone" id="icon-lupa">
+        </div>
+        <img src="assets/icons/microfone_roxo.svg" alt="ícone microfone" id="icon-micro">
+    </header>
+    <div id="header-dimen"></div>
+
+    <main>
+        <div>
+            <h1>Escutadas recentemente</h1>
+            <!-- Música -->
+            <div style="display: flex;">
+                <div class="bloco-roxo-dimen">
+                    <h3 class="titulo-bloco-roxo">Música mais ouvida da semana:</h3>
+                    <div class="bloco-roxo">
+                        <img src="assets/albuns_play/alicia_keys.png" alt="capa foto" id="aliciakeys-img">
+                        <div>
+                            <p class="musica-mais-ouv">If Ain’t Got You</p>
+                            <p class="musica-mais-ouv artista-bloco-txt">Alicia Keys</p>
+                        </div>
+                        <img src="assets/icons/coracao_cinza.svg" alt="ícone coração" class="coracao-cinza">
+                        <img src="assets/botoes/play_cinza.svg" alt="ícone play" class="botao-play-cinza">
+                    </div>
+                </div>
+
+                <div class="bloco-roxo-dimen" style="margin-left: 0;">
+                    <h3 class="titulo-bloco-roxo">Artista mais ouvido da semana:</h3>
+                    <div class="bloco-roxo" style="width: 47.4rem;">
+                        <img src="assets/fotos_artistas/coldplay_hist.png" alt="capa foto" id="coldplay-img">
+                        <a href="artista.html" id="coldplay-artista">Coldplay</a>
+
+                        <img src="assets/icons/coracao_cinza.svg" alt="ícone coração" class="coracao-cinza">
+                        <img src="assets/botoes/play_cinza.svg" alt="ícone play" class="botao-play-cinza">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 27 maio -->
+        <div>
+            <p class="data-hist">Hoje, 27 de maio</p>
+            <hr class="linha-divisoria">
+
+            <!-- Stand By Me -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/stand_by_me.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Stand by Me</p>
+                    <p class="txt-artista">Ben E. King</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Stand by Me</p>
+                <p class="txt-padrao tempo-musica">2:54</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- viva la vida -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/viva_la_vida.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Viva La Vida</p>
+                    <a href="artista.html" class="txt-artista" style="text-decoration: none;">Coldplay</a>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Viva La Vida or Death and A...</p>
+                <p class="txt-padrao tempo-musica">4:02</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- Mirror -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/mirror.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Mirror</p>
+                    <p class="txt-artista">Kendrick Lamar</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Mr. Morale & The Big Steppers</p>
+                <p class="txt-padrao tempo-musica">4:16</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- Arcade -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/arcade.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Arcade</p>
+                    <p class="txt-artista">Duncan Laurence</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Arcade</p>
+                <p class="txt-padrao tempo-musica">3:03</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- My Life -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/mylife.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">My Life</p>
+                    <p class="txt-artista">Imagine Dragons</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Mercury - Act 1</p>
+                <p class="txt-padrao tempo-musica">3:44</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- Blank Space -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/blank_space.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Blank Space</p>
+                    <p class="txt-artista">Taylor Swift</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">1989</p>
+                <p class="txt-padrao tempo-musica">3:51</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- what if i shine -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/barbie_musica.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">What If I Shine</p>
+                    <p class="txt-artista">Barbie</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Rock ‘n Royals (Original Mot...</p>
+                <p class="txt-padrao tempo-musica">3:51</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- drag me down -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/drag_me_down.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Drag Me Down</p>
+                    <p class="txt-artista">One Direction</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Drag Me Down</p>
+                <p class="txt-padrao tempo-musica">3:12</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- If I Ain’t Got You -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/alicia_keys.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">If I Ain’t Got You</p>
+                    <p class="txt-artista">Alicia Keys</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Diary of Alicia Keys</p>
+                <p class="txt-padrao tempo-musica">3:48</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+        </div>
+
+        <!-- 26 maio -->
+        <div>
+            <div class="cabecalho-musica">
+                <p class="data-hist">Ontem, 26 de maio</p>
+                <hr class="linha-divisoria">
+            </div>
+
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/something_just_like_this.png" alt="capa música something just like this" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Something Just Like This</p>
+                    <p class="txt-artista">Coldplay, The Chainsmokers</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Memories...Do Not Open</p>
+                <p class="txt-padrao tempo-musica">4:07</p>
+                <img src="assets/icons/pont3_rosa.svg" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+
+            <!-- This Love -->
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/this_love.png" alt="capa música" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">This Love (Taylor’s Version)</p>
+                    <p class="txt-artista">Taylor Swift</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">This Love (Taylor’s Version)</p>
+                <p class="txt-padrao tempo-musica">4:10</p>
+                <img src="assets/icons/pont3_rosa.svg" alt="3 pontinhos" class="icon-tres-ponts">
+                    <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+                </div>
+    
+                <!-- Radioactive -->
+                <div class="musicas-flex">
+                    <img src="assets/albuns_play/radioactive.png" alt="capa música" class="capa-musica">
+    
+                    <div>
+                        <p class="txt-padrao nome-musica">Radioactive</p>
+                        <p class="txt-artista">Imagine Dragons</p>
+                    </div>
+                    <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                    
+                    <p class="txt-padrao album">Night Visions</p>
+                    <p class="txt-padrao tempo-musica">3:06</p>
+                    <img src="assets/icons/pont3_rosa.svg" class="icon-tres-ponts">
+                    <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+                </div>
+    
+                <!-- Acorda, Pedrinho -->
+                <div class="musicas-flex">
+                    <img src="assets/albuns_play/acorda_pedrinho.png" alt="capa música" class="capa-musica">
+    
+                    <div>
+                        <p class="txt-padrao nome-musica">ACORDA PEDRINHO</p>
+                        <p class="txt-artista">Jovem Dionísio</p>
+                    </div>
+                    <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                    
+                    <p class="txt-padrao album">Acorda, Pedrinho</p>
+                    <p class="txt-padrao tempo-musica">2:53</p>
+                    <img src="assets/icons/pont3_rosa.svg" class="icon-tres-ponts">
+                    <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+                </div>
+        </div>
+
+        <!-- 25 maio -->
+        <div>
+            <div class="cabecalho-musica">
+                <p class="data-hist">Quarta, 25 de maio</p>
+                <hr class="linha-divisoria">
+            </div>
+
+            <div class="musicas-flex">
+                <img src="assets/albuns_play/back_to_december.png" class="capa-musica">
+
+                <div>
+                    <p class="txt-padrao nome-musica">Back to December</p>
+                    <p class="txt-artista">Taylor Swift</p>
+                </div>
+                <img src="assets/icons/coracao_rosa.svg" alt="coração rosa ícone" class="coracao-rosa">
+                
+                <p class="txt-padrao album">Speak Now</p>
+                <p class="txt-padrao tempo-musica">4:53</p>
+                <img src="assets/icons/pont3_rosa.svg" class="icon-tres-ponts">
+                <img src="assets/icons/lixeira.svg" alt="ícone lixeira" class="icon-lixeira">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
