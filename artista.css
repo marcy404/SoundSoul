@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #12130F;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #F8F8F8;
+    overflow-x: hidden;
+}
+
+/* Topbar */
+header{
+    width: 90.52vw;
+    height: 3.5em;
+    background-color: #000000;
+    border-bottom: 1px solid #D1D1D1;
+    margin: 0em 0em 0em 7em;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#botao-avancar{
+    height: 2em;
+    padding: 0.75em 0.5em 0.75em 5.75em;
+    display: flex;
+}
+
+#botao-avancar-dir{
+    padding: 0em 0em 0em 0.5em;
+}
+
+#barra-de-pesquisa{
+    display: flex;
+    width: 36em;
+    height: 2.5em;
+    margin: 0.5em 0em 0.5em 4em;
+    border-radius: 9.375em;
+    background-color: #F8F8F8;
+    font-size: 1em;
+    font-weight: 400;
+    color:#D1D1D1;
+}
+
+#barra-txt{
+    padding: 0.5em 6.5625em 0.5rem 1em;
+}
+
+#icon-lupa{
+    height: 1.5em;
+    position: relative;
+    top: 0.5em;
+    left: 3.125em;
+    bottom: 0.5em;
+}
+
+#icon-micro{
+    padding: 1em 0em 1em 1em;
+    height: 1.5em;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #000000;
+    position: fixed;
+    border-color: rgba(248, 248, 248, 0.6);
+    }
+    
+    .menu-item > img, #profile {
+        width: 40%;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        margin-left: 1.875em; 
+    }
+    
+    .menu-item:hover {
+        opacity: 0.8;
+    }
+    
+    #liked-songs, #history {
+        margin-top: 1.75px;
+    }
+    
+#liked-songs, #history, #make-playlist {
+    width: 8.125rem;
+    }
+    
+#profile {
+    width: 3.75em;
+    height: 3.75rem;
+    background-image: url(assets/artistas/profile_pic_cadu116.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+    margin-left: 1.25em;
+    border: solid;
+    border-width: 0.15625em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+    }
+    
+    
+    #main-menu {
+    width: 112px;
+     height: 100vh;
+    background-color: #000000;
+    border-right: solid;
+    border-right-color: rgba(248, 248, 248, 0.6);    
+     }
+
+#tituloprincipal{
+    color: #ABD2EF;
+    font-weight: bold;
+    font-size: 4em;
+    margin-left: 0.2em;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    align-items: center;
+    margin-top: 1em;
+}
+.botaoinicio{
+    border: solid;
+    border-radius: 0.5em;
+    border-color: #C233FF;
+    background-color: #C233FF;
+    justify-content: center;
+    text-align: center;
+    height: 2.5em;
+    width: 6.25em;
+    margin: 0.5em;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+
+}
+
+.botaoiniciociruclo{
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.5em;
+}
+
+.discografiaimg{
+    width: 11.5em;
+    height: 11.3125em;
+    border-radius: 1.875em;
+}
+
+.discografia{
+    display:flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 2em 0em 1em 8em;
+}
+
+.titulodiscografia{
+    display:flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: 2em 0em 0em 8em;
+}
+
+.discografiatxt{
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.musicaanos{
+    font-weight: bold;
+    color: #BFDEF2;
+    text-align: center;
+    font-size: 1em;
+    margin: 1em 0em 0em 0em;
+}
+
+.titulosmenores{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 1.5em 0em 0em 4em;
+}
+
+.artistasimg{
+    height: 184px;
+    width: 184px;
+    border-radius: 50%;
+}
+
+.artistasimg{
+    width: 11.5em;
+    height: 11.5em;
+    border-radius: 1.875em;
+}
+
+#artistasrelacionados{
+    margin-bottom: 7.5em;
+}
+
+#imgcoldplay{
+    margin: 1.5em 1.5em 3.5em 8em;
+}
+
+#txtsobrecoldplay{
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+    width: 36.6875em;
+    height: 16.4375em;
+    text-align: justify;
+}
+
+#sobrecoldplay{
+    display: flex;
+    flex-direction: row;
+}
+
+#container{
+    display: grid;
+    column-gap: 2;
+}
+
+#musicarecente{
+    text-align: center;
+}
+
+#container1{
+    display: grid;
+    columns: 2;
+    grid-template-columns: 1fr 1fr;
+}
+
+#mmdc{
+    font-size: 1.25em;
+    margin-top: 7.5em;
+    margin-bottom: 1.5em;
+}
+
+.botoesdiscografia{
+    border-radius: 0.5em;
+    border: solid;
+    width: 7.5em;
+    height: 1.8125em;
+    background-color: #C233FF;
+    color: #F8F8F8;
+    border-color: #C233FF;
+    font-size: 0.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#botoes2{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1em 0em 1.5em 8em;
+}
+
+.grupo-musicapopular{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+}
+
+.titulo-musica{
+    font-size: 1.125em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 13em;
+}
+
+.visualizacao-tempo-musica{
+    font-size: 1.125em;
+    font-weight: 100;
+    margin-right: 2px;
+    width: 8.5em;
+    height: 1.5625em;
+}
+
+.musica-popular{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    width: 33.625em;
+    height: 1.5625em;
+}
+
+.informcoes-musicaspopulares{
+    display: flex;
+    flex-direction: row;
+}
+
+.formatacao-tempo{
+    margin-left: 1em;
+    margin-right: 1.5em;
+    width: 2.6875em;
+}
+
+.tocando{
+    width: 1.4375em;
+    height: 1.0625em;
+    padding-top: 0.2em;
+}
+
+.coracao{
+    width: 1.625em;
+    height: 1.4025em;
+    padding-top: 0.2em;
+}
+
+.musica-popular{
+    width: 33.625em;
+    height: 1.5625em;
+}
+
+#musica-mais-popular{
+    margin: 3em 1.5em 2em 2em;
+}
+
+#let-somebody-go{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.4375em;
+    font-weight: 600;
+}
+
+#song{
+    font-size: 1.4375em
+}
+
+#coldplay-inicio{
+    margin-top: 7.5em;
+    margin-left: 8em;
+}
+
+.play{
+    width: 0.878125em;
+    height: 1.0625em;
+    padding-top: 0.2em;
+}
+
+#botaodiscografia1{
+    background-color: #7400A6;
+    border-color: #7400A6;
+}
+
+.botaommp{
+    border: solid;
+    border-color: #C233FF;
+    background-color: #C233FF;
+    width: 5.3125em;
+    height: 1.4375em;
+    border-radius: 1.875em;
+    font-size: 0.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 1.5em 2em 0em;
+}
+
+#botão-exclusivo-premium{
+    font-size: 1em;
+    width: 13.0625em;
+    margin: 1.5em 0em 1.5em 1em;
+}
+
+.colocar-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+#titulo-comunidade{
+    margin: 1.5em 0em 1.5em 4em;
+}
+
+.ver-tudo{
+    margin: 4.1em 0em 0em 2em;
+    font-size: 0.875em;
+}
+
+/* Posts */
+.fundo-post{
+    border: solid;
+    border-radius: 1.25em;
+    width: 30.375em;
+    height: 37.25em;
+    background-color: #000000;
+    border-color: #000000;
+    margin-right: 5em;
+}
+
+.txt-posts{
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 1em 4.5em 1em 1.5em;
+}
+
+.descrição-posts{
+    font-size: 1em;
+    font-weight: 500;
+    width: 28.4375em;
+    height: 1.25em;
+    padding-left: 1.5em;
+}
+
+.foto-post{
+    width: 28.375em;
+    height: 22.6875em;
+    padding: 1em;
+    padding-bottom: 1.5em;
+}
+
+.translate{
+    color: #545454;
+    font-size: 0.75em;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+}
+
+.icone2{
+    padding: 0.20em 1em 1em 1.5em;
+}
+
+.comente-caixa{
+    border-radius: 1.25em;
+    background-color: #12130F;
+    width: 23.5em;
+    height: 1.25em;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: row;
+}
+
+.txt-comentario{
+    font-size: 0.625em;
+    padding-left: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    font-style: italic;
+}
+
+.botão-seguindo{
+    border-radius: 1.25em;
+    width: 9.5em;
+    border: solid;
+    height: 2.8125em;
+    border-color: #FA169F;
+    background-color: #FA169F;
+    position: relative;
+    margin-top: 1em;
+    margin-right: 1.5em;
+    z-index: 1;
+}
+
+.txt-botao-seguindo{
+    padding: 0.625em 0.5em 0.625em 3.1875em;
+}
+
+.informações-centrais{
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-icone{
+    position: absolute;
+    top: 0.750em;
+    left: 1.5em;
+}
+
+.img-tres-pontinhos{
+    width: 0.503125em;
+    height: 2.06875em;
+    margin-top: 1.25em;
+}
+
+.posts-geral{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5em;
+    margin-bottom: 2em;
+    margin-left: 8em;
+}
+
+#something-just-like-this{
+    font-size: 1.125em;
+}
+
+#botao-comunidade{
+    font-size: 0.75em;
+}

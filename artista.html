@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul</title>
+    <link rel="stylesheet" href="artista.css">
+</head>
+<body>
+
+    <header>
+        <div id="botao-avancar">
+            <a href=""><img src="assets/botoes/avancar_esq.svg" alt="ícone avançar"></a>
+            <a href=""><img src="assets/botoes/avancar_dir.svg" alt="ícone avançar" id="botao-avancar-dir"></a>
+        </div>
+        
+        <div id="barra-de-pesquisa">
+            <p id="barra-txt">Pesquise artistas, músicas, podcasts ou letras</p>
+            <img src="assets/icons/lupa_cinza.svg" alt="ícone" id="icon-lupa">
+        </div>
+
+        <img src="assets/icons/microfone_roxo.svg" alt="ícone microfone" id="icon-micro">
+    </header>
+
+    <!-- Div para musica mais recente -->
+    <aside class="menu" id="main-menu">
+        <div class="menu-item" id="profile">
+        </div>
+        <div class="menu-item" id="home">
+            <img src="assets/icons/home.svg" alt="Home">
+        </div>
+
+        <div class="menu-item" id="search">
+            <img src="assets/icons/lupa.svg" alt="Lupa">
+        </div>
+
+        <div class="menu-item" id="library">
+            <img src="assets/icons/biblioteca.svg" alt="Biblioteca">
+        </div>
+
+        <div class="menu-item" id="liked-songs">
+            <img src="assets/icons/musicas_curtidas.svg" alt="Curtidas">
+        </div>
+
+        <div class="menu-item" id="make-playlist">
+            <img src="assets/icons/create.svg" alt="Criar uma Playlist">
+        </div>
+
+        <div class="menu-item" id="history">
+            <img src="assets/icons/historico.svg" alt="Histórico">
+        </div>
+    </aside>
+
+    <main>
+        <div id="container1">
+            <div id="coldplay-inicio">
+                <h1 id="tituloprincipal">Coldplay</h1>
+                <p style="margin: 0.5em 0em 1em 1em;">Mais de 1 milhão de seguidores</p>
+                <div id="botoes">
+                    <p class="botaoinicio">Seguir</p>
+                    <p class="botaoinicio" id="botao-comunidade">Comunidade Coldplay</p>
+                    <img class="botaoiniciociruclo" src="assets/botoes/play_botao.svg" alt="Tocar músicas do Coldplay">
+                    <img class="botaoiniciociruclo" src="assets/botoes/compartilhar_botao.svg" alt="Compartilhar">
+                </div>
+                <img style="margin-top: 6.5em;" src="assets/imagens_inicio/primeira_imagem_coldplay.png" alt="Coldplay">
+            </div>
+
+            <!-- Div para musica mais recente -->
+            <div>
+                <div id="musicarecente">
+                    <p id="mmdc">Musica mais recente do <br> <i>Coldplay</i></p>
+                    <img src="assets/imagens_inicio/let_somebody_go_mr.png" alt="Let Somebody Go">
+                    <p id="let-somebody-go">Let Somebody Go</p>
+                    <p id="song">Song - 1 música</p>
+                </div>
+                <!-- Div para musica mais popular -->
+                <div id="musica-mais-popular-txt" class="colocar-flex">
+                    <div>
+                        <p id="musica-mais-popular">MÚSICAS MAIS POPULARES</p>
+                    </div>
+                    <div>
+                        <p class="botaommp">Veja mais</p>
+                    </div>
+                </div>
+
+                <table>
+                    <tr class="musica-popular">
+                        <td><img class="tocando" src="assets/icons/tocando.svg" alt="tocando"></td>
+                        <td class="titulo-musica">Something Just Like This</td>
+                        <td class="visualizacao-tempo-musica">2,057,499,744</td>
+                        <td class="visualizacao-tempo-musica formatacao-tempo">4:07</td>
+                        <td><img class="coracao" src="assets/icons/coração_curtido.svg" alt="coração curtido"></td>
+                    </tr>
+            
+                    <tr class="musica-popular">
+                        <td><img class="play" src="assets/icons/play.svg" alt="play"></td>
+                        <td class="titulo-musica">The Scientist</td>
+                        <td class="visualizacao-tempo-musica">1,029,918,934</td>
+                        <td class="visualizacao-tempo-musica formatacao-tempo">4:29</td>
+                        <td><img class="coracao" src="assets/icons/coração_curtido.svg" alt="coração curtido"></td>
+                    </tr>
+            
+                    <tr class="musica-popular">
+                        <td><img class="play" src="assets/icons/play.svg" alt="play"></td>
+                        <td class="titulo-musica">Fix You</td>
+                        <td class="visualizacao-tempo-musica">528,087,916</td>
+                        <td class="visualizacao-tempo-musica formatacao-tempo">4:29</td>
+                        <td><img class="coracao" src="assets/icons/coração_curtido.svg" alt="coração curtido"></td>
+                    </tr>
+            
+                    <tr class="musica-popular">
+                        <td><img class="play" src="assets/icons/play.svg" alt="play"></td>
+                        <td class="titulo-musica">Fix You</td>
+                        <td class="visualizacao-tempo-musica">528,087,916</td>
+                        <td class="visualizacao-tempo-musica formatacao-tempo">4:29</td>
+                        <td><img class="coracao" src="assets/icons/coracao_nao_curtido.svg" alt="coração curtido"></td>
+                    </tr>
+            
+                    <tr class="musica-popular">
+                        <td><img class="play" src="assets/icons/play.svg" alt="play"></td>
+                        <td class="titulo-musica">Yellow</td>
+                        <td class="visualizacao-tempo-musica">712,233,072</td>
+                        <td class="visualizacao-tempo-musica formatacao-tempo">4:54</td>
+                        <td><img class="coracao" src="assets/icons/coração_curtido.svg" alt="coração curtido"></td>
+                    </tr>
+            
+                    <tr class="musica-popular">
+                        <td><img class="play" src="assets/icons/play.svg" alt="play"></td>
+                        <td class="titulo-musica">Viva la Vida</td>
+                        <td class="visualizacao-tempo-musica">742,522,804</td>
+                        <td class="visualizacao-tempo-musica formatacao-tempo">4:03</td>
+                        <td><img class="coracao" src="assets/icons/coração_curtido.svg" alt="coração curtido"></td>
+                    </tr>
+        
+                </table>
+                
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Div para a discografias, playlists e artistas relacionados -->
+        <div>
+            <!-- Div para a discografia -->
+            <p class="titulosmenores">Discografia</p>
+
+            <!-- Div botões discografia -->
+            <div id="botoes2">
+                <p class="botoesdiscografia" id="botaodiscografia1">Mais populares</p>
+                <p class="botoesdiscografia">Álbuns</p>
+                <p class="botoesdiscografia">Singles e Eps</p>
+            </div>
+
+            <!-- Imagens e textos das discografias -->
+            <div class="discografia">
+                <div>
+                    <img class="discografiaimg" src="assets/capa_discografia/let_somebody_go.png" alt="Let Somebody Go">
+                    <p class="discografiatxt">Let Somebody Go</p>
+                    <p class="musicaanos">2022</p>
+                </div>
+                <div>
+                    <img class="discografiaimg" src="assets/capa_discografia/parachutes.png" alt="Parachutes">
+                    <p class="discografiatxt">Parachutes</p>
+                    <p class="musicaanos">2000</p>
+                </div>
+                <div>
+                    <img class="discografiaimg" src="assets/capa_discografia/a_rush_of_blood_to_the_head.png" alt="A Rush of Blood to the Head">
+                    <p class="discografiatxt">A Rush of Blood...</p>
+                    <p class="musicaanos">2001</p>
+                </div>
+                <div>
+                    <img class="discografiaimg" src="assets/capa_discografia/music_of_the_spheres.png" alt="Music of the Spheres">
+                    <p class="discografiatxt">Music of the Sph...</p>
+                    <p class="musicaanos">2021</p>
+                </div>
+                <div>
+                    <img class="discografiaimg" src="assets/capa_discografia/my_universe.png" alt="My universe">
+                    <p class="discografiatxt">My Universe</p>
+                    <p class="musicaanos">2021</p>
+                </div>
+                <div>
+                    <img class="discografiaimg" src="assets/capa_discografia/a_rush_of_blood_to_the_head.png" alt="A Head Full of Dreams">
+                    <p class="discografiatxt">A Head Full of Dr...</p>
+                    <p class="musicaanos">2021</p>
+                </div>
+                <div>
+                    <img class="discografiaimg" src="assets/capa_discografia/ghost_stories.png" alt="Ghost Stories">
+                    <p class="discografiatxt">Ghost Stories</p>
+                    <p class="musicaanos">2014</p>
+
+                </div>
+            </div>
+
+            <!-- Div para as playlists -->
+            <div>
+                <div class="colocar-flex">
+                    <div>
+                        <p class="titulosmenores">Playlist</p>
+                    </div>
+                    <div>
+                        <p class="ver-tudo">Ver tudo></p>
+                    </div>
+                </div>
+                <div class="discografia">
+                    <div>
+                        <img class="discografiaimg" src="assets/capa_playlist/playlist_1.png" alt="Melhores do Coldplay">
+                        <p class="discografiatxt">Melhores do Coldplay</p>
+                    </div>
+
+                    <div>
+                        <img class="discografiaimg" src="assets/capa_playlist/playlist_2.png" alt="Singles Coldplay">
+                        <p class="discografiatxt">Singles Coldplay</p>
+                    </div>
+        
+                    <div>
+                        <img class="discografiaimg" src="assets/capa_playlist/playlist_3.png" alt="Feats Coldplay">
+                        <p class="discografiatxt">Feats Coldplay</p>
+                    </div>
+
+                    <div>
+                        <img class="discografiaimg" src="assets/capa_playlist/playlist_4.png" alt="Show e Lives Coldplay">
+                        <p class="discografiatxt">Show e Lives Coldplay</p>
+                    </div>
+
+                    <div>
+                        <img class="discografiaimg" src="assets/capa_playlist/playlist_5.png" alt="Músicas de amor">
+                        <p class="discografiatxt">Músicas de amor</p>
+                    </div>
+
+                    <div>
+                        <img class="discografiaimg" src="assets/capa_playlist/playlist_6.png" alt="Pop Anos 2010">
+                        <p class="discografiatxt">Pop Anos 2010</p>
+                    </div>
+
+                    <div>
+                        <img class="discografiaimg" src="assets/capa_playlist/playlist_7.png" alt="Music of the Spheres">
+                        <p class="discografiatxt">Music of The Spheres</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Div para os artistas relacionados -->
+            <div id="artistasrelacionados">
+                <div class="colocar-flex">
+                    <div>
+                        <p class="titulosmenores">Artistas relacionados</p>
+                    </div>
+                    <div>
+                        <p class="ver-tudo">Ver tudo ></p>
+                    </div>
+                </div>
+
+                <div class="discografia">
+                    <div>
+                        <img class="artistasimg" src="assets/capa_artistas/chainsmokers.png" alt="The Chainsmokers">
+                        <p class="discografiatxt">The Chainsmokers</p>
+                    </div>
+                
+                    <div>
+                        <img class="artistasimg" src="assets/capa_artistas/one_republic.png" alt="One Republic">
+                        <p class="discografiatxt">One Republic</p>
+                    </div>
+                    <div>
+                        <img src="assets/capa_artistas/maroon_5.png" alt="Maroon 5">
+                        <p class="discografiatxt">Maroon 5</p>
+                    </div>
+                    <div>
+                        <img src="assets/capa_artistas/capital_cities.png" alt="Capital Cities">
+                        <p class="discografiatxt">Capital Cities</p>
+                    </div>
+                    <div>
+                        <img src="assets/capa_artistas/imagine_dragons.png" alt="Imagine Dragons">
+                        <p class="discografiatxt">Imagine Dragons</p>
+                    </div>
+                    <div>
+                        <img src="assets/capa_artistas/katy_perry.png" alt="Katy Perry">
+                        <p class="discografiatxt">Katy Perry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sobre Coldplay -->
+        <div>
+            <p class="titulosmenores">Sobre o Coldplay</p>
+            <div id="sobrecoldplay">
+                <img id="imgcoldplay" src="assets/sobre_coldplay/imagem_sobre_coldplay.png" alt="Coldplay">
+                <p id="txtsobrecoldplay">Os integrantes do Coldplay se conheceram em 1996, na universidade de Londres, na qual Chris Martin (vocalista e pianista) e Jonny Buckland fundaram a até então Pectorlaz. O segundo nome foi Starfish, após Guy Berryman (baixista) se juntar ao grupo. <br><br> Coldplay alcançou fama mundial com o lançamento da canção Yellow em 2000. Após isso, dois anos após o sucesso da música, Coldplay lançou o álbum 'A Rush of Blood to the Head'.</p>
+            </div>
+        </div>
+
+        <!-- Comunidade Coldplay -->
+        <div id="comunidadecoldplay">
+            <div class="colocar-flex">
+                <div>
+                    <p class="titulosmenores" id="titulo-comunidade">Comunidade Coldplay</p>
+                </div>
+                <div>
+                    <p class="botaommp" id="botão-exclusivo-premium">Exclusivo Premium</p>
+                </div>
+            </div>
+
+            <div>
+                <!-- Div para os posts  -->
+                <div class="posts-geral">
+                    <!-- Post 1 -->
+                    <div class="fundo-post">
+                        <div class="informações-centrais">
+                            <div>
+                                <p class="txt-posts">Chris Martin<br>@chrismartin</p>
+                            </div>
+                            <div class="botão-seguindo">
+                                <img class="foto-icone" src="assets/icons/perfil.svg" alt="Perfil">
+                                <p class="txt-botao-seguindo">Seguindo</p>
+                            </div>
+                            <img class="img-tres-pontinhos" src="assets/icons/pont3_rosa.svg" alt="3 pontinhos">
+                        </div>
+                        <hr>
+                        <img class="foto-post" src="assets/posts/foto_post_1.png" alt="Music of the Spheres">
+                        <p class="descrição-posts">New data shows coming out! Music of the Spheres Tour</p>
+                        <p class="translate"><i>Translate to portuguese - posted 2 hours ago</i></p>
+                        <div class="icones">
+                            <div>
+                                <img src="assets/icons/coracao_nao_curtido_pequeno.svg" alt="coração">
+                            </div>
+                            <div>
+                                <img src="assets/icons/enviar.svg" alt="enviar">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <div>
+                                <img class="icone2" src="assets/icons/comentario.svg" alt="comentar">
+                            </div>
+                            <div class="comente-caixa">
+                                <p class="txt-comentario">Comente algo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post 2 -->
+                    <div class="fundo-post">
+                        <div class="informações-centrais">
+                            <div>
+                                <p class="txt-posts">Guy Berryman<br>@berrymanguy</p>
+                            </div>
+                            <div class="botão-seguindo">
+                                <img class="foto-icone" src="assets/icons/perfil.svg" alt="Perfil">
+                                <p class="txt-botao-seguindo">Seguindo</p>
+                            </div>
+                            <img class="img-tres-pontinhos" src="assets/icons/pont3_rosa.svg" alt="3 pontinhos">
+                        </div>
+                        <hr>
+                        <img class="foto-post" src="assets/posts/foto_post_2.png" alt="Post 2">
+                        <p class="descrição-posts">Getting some inspirations for the new music.</p>
+                        <p class="translate"><i>Translate to portuguese - posted 1 day ago</i></p>
+                        <div class="icones">
+                            <div>
+                                <img src="assets/icons/coracao_nao_curtido_pequeno.svg" alt="coração">
+                            </div>
+                            <div>
+                                <img src="assets/icons/enviar.svg" alt="enviar">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <div>
+                                <img class="icone2" src="assets/icons/comentario.svg" alt="comentar">
+                            </div>
+                            <div class="comente-caixa">
+                                <p class="txt-comentario">Comente algo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post 3 -->
+                    <div class="fundo-post">
+                        <div class="informações-centrais">
+                            <div>
+                                <p class="txt-posts">Chirs Martin<br>@chrismartin</p>
+                            </div>
+                            <div class="botão-seguindo">
+                                <img class="foto-icone" src="assets/icons/perfil.svg" alt="Perfil">
+                                <p class="txt-botao-seguindo">Seguindo</p>
+                            </div>
+                            <img class="img-tres-pontinhos" src="assets/icons/pont3_rosa.svg" alt="3 pontinhos">
+                        </div>
+                        <hr>
+                        <img class="foto-post" src="assets/posts/foto_post_3.png" alt="Post 3">
+                        <p class="descrição-posts">A new music will be launched soon. Only here in Soul!!</p>
+                        <p class="translate"><i>Translate to portuguese - posted 1 day ago</i></p>
+                        <div class="icones">
+                            <div>
+                                <img src="assets/icons/coracao_nao_curtido_pequeno.svg" alt="coração">
+                            </div>
+                            <div>
+                                <img src="assets/icons/enviar.svg" alt="enviar">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <div>
+                                <img class="icone2" src="assets/icons/comentario.svg" alt="comentar">
+                            </div>
+                            <div class="comente-caixa">
+                                <p class="txt-comentario">Comente algo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts-geral">
+                    <!-- Post 4 -->
+                    <div class="fundo-post">
+                        <div class="informações-centrais">
+                            <div>
+                                <p class="txt-posts">Johny Buckland<br>@jojobuckbuck</p>
+                            </div>
+                            <div class="botão-seguindo">
+                                <img class="foto-icone" src="assets/icons/perfil.svg" alt="Perfil">
+                                <p class="txt-botao-seguindo">Seguindo</p>
+                            </div>
+                            <img class="img-tres-pontinhos" src="assets/icons/pont3_rosa.svg" alt="3 pontinhos">
+                        </div>
+                        <hr>
+                        <img class="foto-post" src="assets/posts/foto_post_4.png" alt="Post 4">
+                        <p class="descrição-posts">Preparing a surprise for u</p>
+                        <p class="translate"><i>Translate to portuguese - posted 1 weeks ago</i></p>
+                        <div class="icones">
+                            <div>
+                                <img src="assets/icons/coracao_nao_curtido_pequeno.svg" alt="coração">
+                            </div>
+                            <div>
+                                <img src="assets/icons/enviar.svg" alt="enviar">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <div>
+                                <img class="icone2" src="assets/icons/comentario.svg" alt="comentar">
+                            </div>
+                            <div class="comente-caixa">
+                                <p class="txt-comentario">Comente algo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post 5 -->
+                    <div class="fundo-post">
+                        <div class="informações-centrais">
+                            <div>
+                                <p class="txt-posts">Will Champion<br>@willchampion</p>
+                            </div>
+                            <div class="botão-seguindo">
+                                <img class="foto-icone" src="assets/icons/perfil.svg" alt="Perfil">
+                                <p class="txt-botao-seguindo">Seguindo</p>
+                            </div>
+                            <img class="img-tres-pontinhos" src="assets/icons/pont3_rosa.svg" alt="3 pontinhos">
+                        </div>
+                        <hr>
+                        <img class="foto-post" src="assets/posts/foto_post_5.png" alt="Post 5">
+                        <p class="descrição-posts">Recording a new music here</p>
+                        <p class="translate"><i>Translate to portuguese - posted 2 weeks ago</i></p>
+                        <div class="icones">
+                            <div>
+                                <img src="assets/icons/coracao_nao_curtido_pequeno.svg" alt="coração">
+                            </div>
+                            <div>
+                                <img src="assets/icons/enviar.svg" alt="enviar">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <div>
+                                <img class="icone2" src="assets/icons/comentario.svg" alt="comentar">
+                            </div>
+                            <div class="comente-caixa">
+                                <p class="txt-comentario">Comente algo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post 6 -->
+                    <div class="fundo-post">
+                        <div class="informações-centrais">
+                            <div>
+                                <p class="txt-posts">Coldplay<br>@coldplay</p>
+                            </div>
+                            <div class="botão-seguindo">
+                                <img class="foto-icone" src="assets/icons/perfil.svg" alt="Perfil">
+                                <p class="txt-botao-seguindo">Seguindo</p>
+                            </div>
+                            <img class="img-tres-pontinhos" src="assets/icons/pont3_rosa.svg" alt="3 pontinhos">
+                        </div>
+                        <hr>
+                        <img class="foto-post" src="assets/posts/foto_post_6.png" alt="Post 6">
+                        <p class="descrição-posts">Doing a trip to Amstardan before starting the World Tour</p>
+                        <p class="translate"><i>Translate to portuguese - posted 1 month ago</i></p>
+                        <div class="icones">
+                            <div>
+                                <img src="assets/icons/coracao_nao_curtido_pequeno.svg" alt="coração">
+                            </div>
+                            <div>
+                                <img src="assets/icons/enviar.svg" alt="enviar">
+                            </div>
+                        </div>
+                        <div class="comentarios">
+                            <div>
+                                <img class="icone2" src="assets/icons/comentario.svg" alt="comentar">
+                            </div>
+                            <div class="comente-caixa">
+                                <p class="txt-comentario">Comente algo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+</body>
+</html>
