@@ -127,6 +127,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center space-around;
+    z-index: 1;
     font-size: 62.5%;
     width: 98.3vw;
     height: 7.5em;
