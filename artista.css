@@ -26,6 +26,12 @@ header{
     z-index: 2;
 }
 
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: #F8F8F8;
+}
+
 #botao-avancar{
     height: 2em;
     padding: 0.75em 0.5em 0.75em 5.75em;
