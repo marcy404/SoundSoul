@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+* {
+    margin: 0em;
+    padding: 0em;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #000000;
+    color: #F8F8F8;
+    background-image: url(assets/background_flex.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+/* Menu */
+#content-box {
+    margin-top: 16px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    border-color: rgba(248, 248, 248, 0.6);
+    }
+    
+.menu-item > img, #profile {
+    width: 40%;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: 1.875em; 
+    }
+    
+.menu-item:hover {
+    opacity: 0.8;
+    }
+    
+#liked-songs, #history {
+    margin-top: 1.75px;
+    }
+    
+#liked-songs, #history, #make-playlist {
+    width: 8.125rem;
+    }
+    
+#profile {
+    width: 3.75em;
+    height: 3.75rem;
+    background-image: url(assets/artistas/profile_pic_cadu116.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+    margin-left: 1.25em;
+    border: solid;
+    border-width: 0.15625em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+    
+#main-menu {
+    width: 112px;
+    height: 100vh;
+    background-color: #000000;
+    border-right: solid;
+    border-right-color: rgba(248, 248, 248, 0.6);    
+}
+
+#soul {
+    margin-left: 2rem;
+}
+
+/* top músicas mais ouvidas */
+#fundo-hub{
+    border: solid;
+    border-radius: 1.5em;
+    border-color: #000000;
+    background-color: #000000;
+    width: 36.5em;
+    height: 58em;
+    margin: 5em 5em 5em 15.1875em;
+    position: relative;
+}
+
+#fundo-musica-mais-ouvida{
+    border: solid;
+    border-radius: 1.25em;
+    border-color: #181a15;
+    background-color: #181a15;
+    width: 30em;
+    height: 17.25em;
+    margin: 3em 3.5em 3em 3em;
+}
+
+#capa-musica-mais-ouvida{
+    margin: 3.25em 0.6875em 2.6875em 0.5em;
+}
+
+#perfil-user-stories{
+    position: absolute;
+    bottom: 56em;
+    left: 16.25em;
+    right: 16.25em;
+}
+
+#musica-mais-ouvida{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-quatro{
+    border: solid;
+    border-radius: 1em;
+    border-color: #1f201d;
+    background-color: #1f201d;
+    display: flex;
+    flex-direction: row;
+    height: 6.5em;
+    width: 30em;
+    margin-bottom: 1em;
+    border-bottom: solid #FA169F 2px;
+}
+
+.imagem{
+    width: 4.5em;
+    height: 4.5em;
+    margin: 1em 0.5em 1em 1em;
+    border-radius: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.nome-musica{
+    font-size: 1.25em;
+    margin-top: 1.3125em;
+}
+
+#user-name-storie{
+    margin-top: 0.25em;
+    font-size: 1em;
+    width: 4.5em;
+    font-style: italic;
+    text-align: center;
+    margin-left: -0.2em;
+}
+
+#stories-perfil{
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+}
+
+.nome-artista{
+    font-style: italic;
+    font-weight: 500;
+    color: rgba(248, 248, 248, 0.6);
+    margin-top: 1em;
+    width: 12.5em;
+}
+
+#nome-musica-principal{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 4.5em 1.1875em 0.5em 0.6875em;
+}
+
+#nome-artista-principal{
+    font-style: italic;
+    font-size: 1em;
+    margin-left: 0.6875em;
+    color: #C233FF;
+    font-weight: 500;
+}
+
+.botao-play{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 1.5em 3em 1.5em 5em;
+}
+
+#container-3{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+}
+
+#borda-escutando{
+    border: solid;
+    border-color: #C233FF;
+    border-radius: 1.5625em;
+    width: 14.125em;
+    height: 4em;
+    margin-top: 2em;
+}
+
+#escutando-agr{
+    font-size: 0.9375em; 
+    font-style: italic; 
+    font-weight: 500;
+}
+
+/* stories recentes de outras pessoas */
+
+#título-grande{
+    width: 23em;
+    color: #F8F8F8;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 1.2em;
+    margin-bottom: 2.5em;
+}
+
+#container-geral{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.fotos-perfil{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.nome-user{
+    width: 11em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.margin-pessoas{
+    margin-bottom: 1.5em;
+}
+
+.ainda-não-visualizou{
+    border: solid;
+    border-radius: 50%;
+    width: 11em;
+    height: 11em;
+    margin-right: 1.5em;
+    border-color: #C233FF;
+}
+
+#pessoas-stories{
+    display: flex;
+    flex-direction: row;
+}

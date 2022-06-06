@@ -1,69 +1,370 @@
-/*
-#12130F --> body background
-#F8F8F8 --> branco (texto)
-#C233FF --> roxo principal
-#000000 --> preto 00000
-rgba(248, 248, 248, 0.6) --> branco opaco p/ seprações
-*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;500;800&display=swap');
 
-html {
+* {
+    margin-top: 0;
+}
+
+:root {
     font-size: 62.50%;
+    font-family: 'Be Vietnam Pro', monospace;
+    --backrgound: #12130F;
+    --branco_principal: #F8F8F8;
+    --roxo_principal: #C233FF;
+    --preto000: #000000;
 }
 
 body {
     margin: 0;
-    height: 1000px;
-
-    background-color: #12130F;
-    color: #f8f8f8;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#song-menu {
-    width: 96vw;
-    height: 5rem;
-
-    background-color: #000000;
-    position: fixed;
-    bottom: 0;
-    margin-left: 1vw;
-
-    border-top: solid;
-    border-left: solid;
-    border-right: solid;
-    border-top-left-radius: 4rem;
-    border-top-right-radius: 4rem;
-    border-color: rgba(248, 248, 248, 0.6);
+    height: 2300px;
+    background-color: var(--backrgound);
+    color: var(--branco_principal);
+    font-family: Be Vietnam Pro, Arial, Helvetica, sans-serif;
 }
 
 .menu {
-    width: 112px;
-    height: 100vh;
-
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     background-color: #000000;
-    border-right: solid;
-    border-right-color: rgba(248, 248, 248, 0.6);
-
     position: fixed;
 }
 
+.menu-item, #profile {
+    width: 40%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 3rem;
+}
+
+.menu-item:hover {
+    filter: brightness(130%);
+}
+
+#liked-songs, #history {
+    margin-top: 28px;
+}
+
+#soul {
+    margin-left: 3rem;
+}
+
+#main-menu {
+    top: 0;
+    width: 112px;
+    height: 100vh;
+    background-color: #000000;
+    border-right: solid;
+    border-right-color: #404040;
+}
+
+#profile {
+    width: 6rem;
+    height: 6rem;
+    background-image: url(assets/artistas/profile_pic_cadu116.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+    margin-left: 2rem;
+    border: solid;
+    border-width: 0.25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#content-box {
+    margin-top: 1.6rem;
+}
+
+#song-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center space-around;
+    width: 98.3vw;
+    height: 7.5rem;
+    bottom: 0;
+    margin: 0;
+    border: 3px solid #404040;
+    border-bottom: none;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+#capa {
+    height: 5.6rem;
+    width: 5.6rem;
+    margin: 5px;
+    background-image: url(assets/musicas/justlikethis.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 2rem;
+    top: 0.2rem;
+}
+
+#title {
+    position: relative;
+    top: 2rem;
+    left: 4rem;
+}
+
+#banda {
+    font-style: italic;
+    color: rgba(248, 248, 248, 0.6);
+    position: relative;
+    top: 3.7rem;
+    left: -10.7rem;
+}
+
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#barra-musica {
+    position: relative;
+    top: -0.4rem;
+    margin-left: 5.5rem;
+}
+
+#colunm3 {
+    display: flex;
+    position: relative;
+    left: 5.5rem;
+    gap: 47.2rem;
+}
+
+#column1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        
+    position: relative;
+    top: 0.8rem;
+    right: 3.2rem;
+    gap: 1.6rem;
+}
+
+#shuffle {
+    position: inherit;
+    right: 16.2rem;
+}
+
+#loop {
+    position: inherit;
+    left: 17.6rem;
+}
+
+#volume {
+    position: relative;
+    top: 0.5rem;
+    left: 8rem;
+}
+
+#direita {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2.4rem;
+    position: relative;
+    left: 15rem;
+    top: -1.5rem;
+}
+
+main {
+    margin-left: 224px;
+    margin-top: 16px;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 5.6rem;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.separation {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 2rem;
+    margin-bottom: 6.4rem;
+}
+
+.imagem-artista {
+    width: 14.4rem;
+    height: 14.4rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.caixa-artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa-artista:hover {
+    filter: brightness(130%);
+}
+
+.caixa-artista > p {
+    margin-top: 1.6rem;
+    font-size: 2rem;
+}
+
+.caixa-album {
+    width: 13ch;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.albuns {
+    margin-bottom: 1.6rem;
+    border-radius: 10%;
+    width: 18rem;
+    height: 18rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.albuns:hover {
+    filter: brightness(130%);
+}
+
+#self {
+    background-image: url(assets/artistas/profile_pic_cadu116.png);
+}
+
+#liza {
+    background-image: url(assets/artistas/profile_pic_liza.png);
+}
+
+#izalima {
+    background-image: url(assets/artistas/profile_pic_izalima.png);
+}
+
+#mari {
+    background-image: url(assets/artistas/profile_pic_maripera.png);
+}
+
+#deivid {
+    background-image: url(assets/artistas/profile_pic_deivid.png);
+}
+
+#patrick {
+    background-image: url(assets/artistas_partedois/foto_de_perfil_patrick.png);
+}
+
+#coldplay {
+    background-image: url(assets/artistas/coldplay.png);
+}
+
+#strokes {
+    background-image: url(assets/artistas/thestrokes.png);
+}
+
+#dionisio {
+    background-image: url(assets/artistas/jovem_dionisio.png);
+}
+
+#dragons {
+    background-image: url(assets/artistas/dragons.png);
+}
+
+#cranberries {
+    background-image: url(assets/artistas/cranberries.png);
+}
+
+#my-mix {
+    background-image: url(assets/artistas/my_mix.png);
+}
+
+#play-home {
+    background-image: url(assets/artistas/home_playlist.png);
+}
+
+#coldplay-fav {
+    background-image: url(assets/artistas/coldplay_fav.png);
+}
+
+#imagine {
+    background-image: url(assets/artistas_partedois/imagine.png);
+}
 
 
-    .menu-item > img {
-        width: 45%;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        margin-left: 20px;
-    }
+#benicio {
+    background-image: url(assets/artistas_partedois/benício.png);
+}
 
-    #liked-songs {
-        margin-top: 28px;
-    }
+#relax {
+    background-image: url(assets/artistas_partedois/relax.png);
+}
 
-    .menu-item:hover {
-        opacity: 0.8;
-    }
+#pop-alturas {
+    background-image: url(assets/artistas_partedois/pop_nas_alturas.png);
+}
 
-    #history {
-        margin-top: 28px;
-    }
+#classic-rock {
+    background-image: url(assets/artistas_partedois/rock_classico.png);
+}
+
+#sextou {
+    background-image: url(assets/artistas_partedois/sextou_com_festa.png);
+}
+
+#mistureba {
+    background-image: url(assets/artistas_partedois/mistura_semanal.png);
+}
+
+#terno {
+    background-image: url(assets/artistas_partedois/o_terno.png);
+}
+
+#taylor {
+    background-image: url(assets/artistas_partedois/taylor_swift.png);
+}
+
+#sonic {
+    background-image: url(assets/artistas_partedois/silk_sonic.png);
+}
+
+#jorge {
+    background-image: url(assets/artistas_partedois/seu_jorge.png);
+}
+
+#arctic {
+    background-image: url(assets/artistas_partedois/arctic_monkeys.png);
+}
+
+#melhor-terno {
+    background-image: url(assets/artistas_partedois/album_terno.png);
+}
+
+#dawn-fm {
+    background-image: url(assets/artistas_partedois/dawn_fm.png);
+}
+
+#am {
+    background-image: url(assets/artistas_partedois/am.png);
+}
+
+#lover {
+    background-image: url(assets/artistas_partedois/lover.png);
+}
+
+#album-sonic {
+    background-image: url(assets/artistas_partedois/album_silk_sonic.png);
+}

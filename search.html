@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul</title>
+    <link rel="stylesheet" href="pesquisa.css">
+</head>
+<body>
+
+    <header>
+        <div id="botao-avancar">
+            <a href=""><img src="assets/botoes/avancar_esq.svg" alt="ícone avançar"></a>
+            <a href=""><img src="assets/botoes/avancar_dir.svg" alt="ícone avançar" id="botao-avancar-dir"></a>
+        </div>
+        
+        <div id="barra-de-pesquisa">
+            <p id="barra-txt">Pesquise artistas, músicas, podcasts ou letras</p>
+            <img src="assets/icons/lupa_cinza.svg" alt="ícone" id="icon-lupa">
+        </div>
+
+        <img src="assets/icons/microfone_roxo.svg" alt="ícone microfone" id="icon-micro">
+    </header>
+
+    <!-- Menu da esquerda -->
+    <aside class="menu" id="main-menu">
+        <div id="content-box">
+            <div class="menu-item" id="profile">
+            </div>
+            <a href="index.html"><img src="assets/icons/home.svg" alt="Home" class="menu-item" id="home"></a>
+            <img src="assets/icons/icon_lupa_cheio.svg" alt="Lupa" class="menu-item" id="search">
+            <img src="assets/icons/biblioteca.svg" alt="Biblioteca" class="menu-item" id="library">
+            <img src="assets/icons/musicas_curtidas.svg" alt="Curtidas" class="menu-item" id="liked-songs">
+            <img src="assets/icons/create.svg" alt="" class="menu-item" id="make-playlist">
+            <a href="historico.html"><img src="assets/icons/historico.svg" alt="Histórico" class="menu-item" id="history"></a>
+            <img src="assets/icons/logo.png" alt="Soul" id="soul">
+        </div>
+    </aside>
+
+    <main>
+        <!-- div músicas que escutei recentemente -->
+        <div class="margin">
+
+            <div style="display: flex; flex-direction:row">
+                <div>
+                    <p class="titulosgrandes">Músicas que escutei recentemente</p>
+                </div>
+                <div>
+                    <p id="ver-tudo">Ver tudo ></p>
+                </div>
+            </div>
+
+            <p id="tempo">Hoje, 2 de junho</p>
+            <div id="container">
+
+                <!-- div Stand By me-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/stand_by_me.png" alt="Stand by Me">
+                        <div class="informaçoes">
+                            <p class="musica">Stand by Me</p>
+                            <p class="artista">Ben E. King</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+                <!-- div Arcade-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/arcade.png" alt="Arcade">
+                        <div class="informaçoes">
+                            <p class="musica">Arcade</p>
+                            <p class="artista">Duncun Laurance</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+                <!-- div What If I Shine-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/what_if_i_shine.png" alt="What If I Shine">
+                        <div class="informaçoes">
+                            <p class="musica">What If I Shine</p>
+                            <p class="artista">Barbie</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+                <!-- div Viva la Vida-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/viva_la_vida.png" alt="Viva la Vida">
+                        <div class="informaçoes">
+                            <p class="musica">Viva la Vida</p>
+                            <p class="artista">Coldplay</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+                <!-- div My Life-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/my_life.png" alt="My Life">
+                        <div class="informaçoes">
+                            <p class="musica">My Life</p>
+                            <p class="artista">Imagine Dragons</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+                <!-- div Drag me Down-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/drag_me_down.png" alt="Drag me Down">
+                        <div class="informaçoes">
+                            <p class="musica">Drag me Down</p>
+                            <p class="artista">One Direction</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+                <!-- div Mirror-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/mirror.png" alt="Mirror">
+                        <div class="informaçoes">
+                            <p class="musica">Mirror</p>
+                            <p class="artista">Kendrick Lamar</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+                
+                <!-- div Blank Space-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/blank_space.png" alt="Blank Space">
+                        <div class="informaçoes">
+                            <p class="musica">Blank Space</p>
+                            <p class="artista">Taylor Swift</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+                <!-- div If Ain't Got You-->
+                <div class="musicasrecentes">
+                    <div class="musica-texto">
+                        <img class="imagensum" src="assets/capa_musicas/if_aint_got_you.png" alt="If Ain't Got You">
+                        <div class="informaçoes">
+                            <p class="musica">If Ain't Got You</p>
+                            <p class="artista">Alicia Keys</p>
+                        </div>
+                    </div>
+                    <img class="pontinhos" src="assets/icons/tres_pontinhos.svg" alt="3 pontinhos">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- div Pesquisas recentes-->
+        <div class="margin">
+            <p class="titulosgrandes" id="titulo2">Pesquisas recentes</p>
+
+            <!-- div Imagens e títulos-->
+            <div id="pesquisasrecentes">
+                <!-- div Tim Maia-->
+                <div>
+                    <img class="artistasimagem" src="assets/pesquisas_recentes/tim_maia.png" alt="Tim Maia">
+                    <p class="txtpesquisas">Tim Maia</p>
+                </div>
+
+                <!-- div Coração Bandido-->
+                <div>
+                    <img class="musciaimagem" src="assets/pesquisas_recentes/coração_bandido.png" alt="Corção Bandido">
+                    <p class="txtpesquisas">Coração Bandido</p>
+                </div>
+
+                <!-- div Parachutes-->
+                <div>
+                    <img class="musciaimagem"  src="assets/pesquisas_recentes/parachutes.png" alt="Parachutes">
+                    <p class="txtpesquisas">Parachutes</p>
+                </div>
+
+                <!-- div Claudinho e Bochecha-->
+                <div>
+                    <img class="artistasimagem"  src="assets/pesquisas_recentes/claudinho_e_bochecha.png" alt="Claudinho e Bochecha">
+                    <p class="txtpesquisas">Claudinho e Bochecha</p>
+                </div>
+
+                <!-- div A História Mais velha do Mundo-->
+                <div>
+                    <img class="musciaimagem"  src="assets/pesquisas_recentes/a_história_mais_velha_do_mundo.png" alt="A História Mais Velha do Mundo">
+                    <p class="txtpesquisas">A História Mais Velha do Mundo</p>
+                </div>
+
+                <!-- div Orla Gartland-->
+                <div>
+                    <img class="artistasimagem"  src="assets/pesquisas_recentes/orla_gartland.png" alt="Orla Gartland">
+                    <p class="txtpesquisas">Orla Gartland</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- div Explore outros Gêneros-->
+        <div class="margin">
+            <p class="titulosgrandes" id="titulo3">Explore outros gêneros</p>
+
+            <div class="generos">
+                <!-- div Alternativo-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/alternativo.png" alt="Alternativo"> <!-- div Arrumar depois-->
+                    <p class="txt-generos">Alternativo</p>
+                </div>
+
+                <!-- div Axé-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/axé.png" alt="Axé">
+                    <p class="txt-generos">Axé</p>
+                </div>
+
+                <!-- div Jazz-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/jazz.png" alt="Jazz">
+                    <p class="txt-generos">Jazz</p>
+                </div>
+
+                <!-- div Bossa Nova-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/bossa_nova.png" alt="Bossa Nova">
+                    <p class="txt-generos">Bossa Nova</p>
+                </div>
+
+                <!-- div Funk-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/funk.png" alt="Funk">
+                    <p class="txt-generos">Funk</p>
+                </div>
+
+                <!-- div Samba-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/samba.png" alt="Samba">
+                    <p class="txt-generos">Samba</p>
+                </div>
+
+                <!-- div Rock-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/rock.png" alt="Rock">
+                    <p class="txt-generos">Rock</p>
+                </div>
+
+                <!-- div Sertanejo-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/sertanejo.png" alt="Sertanejo">
+                    <p class="txt-generos">Sertanejo</p>
+                </div>
+
+                <!-- div Eletrônica-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/eletrônica.png" alt="Eletrônica">
+                    <p class="txt-generos">Eletrônica</p>
+                </div>
+
+                <!-- div Pop-->
+                <div style="position: relative">
+                    <img src="assets/fundo_generos/pop.png" alt="Pop">
+                    <p class="txt-generos">Pop</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer - menu de música -->
+    <footer class="menu" id="song-menu">
+        <div id="esquerda" style="display: flex;">
+            <div id="capa"></div>
+            <h3 id="title">Something Just Like This</h3>
+            <p id="banda">The Chainsmokers, Coldplay</p>
+        </div>
+
+        <div id="centro">
+            <div id="column1">
+                <img src="assets/icons/shuffle.svg" alt="Aleatório" id="shuffle">
+                <img src="assets/icons/previous.svg" alt="Música anterior" id="previous">
+                <img src="assets/icons/pause.svg" alt="Pausa" id="pause">
+                <img src="assets/icons/next.svg" alt="Próxima música" id="next">
+                <img src="assets/icons/Loop.svg" alt="Loopar a música" id="loop">
+            </div>
+
+            <div id="column2">
+                <img src="assets/icons/barra_musica.svg" alt="Barra de tempo da música" id="barra-musica">
+                <img src="assets/icons/volume.svg" alt="Volume" id="volume">
+            </div>
+
+            <div id="colunm3">
+                <p id="start">1:03</p>
+                <p id="end">4:07</p>
+            </div>
+        </div>
+
+        <div id="direita">
+            <img src="assets/icons/coracao_cheio.svg" alt="Curtida" id="coracao-cheio">
+            <img src="assets/icons/microfone.svg" alt="Letras" id="microfone">
+            <img src="assets/icons/screen.svg" alt="Conectar dispositivo" id="screen">
+        </div>
+    </footer>
+</body>
+</html>

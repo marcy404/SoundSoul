@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin-top: 8.5em;
+    margin-left: 8.5em;
+}
+
+body{
+    height: 1700px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-image: url(/assets/background_flex.png);
+    color: #F8F8F8;
+    background-size: 120% 100%;
+    overflow-x: hidden;
+}
+
+
+/* Topbar */
+header{
+    width: 90.52vw;
+    height: 3.5em;
+    background-color: #000000;
+    border-bottom: solid #404040;
+    margin: 0em 0em 0em 7em;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#botao-avancar{
+    height: 2em;
+    padding: 0.75em 0.5em 0.75em 5.75em;
+    display: flex;
+}
+
+#botao-avancar-dir{
+    padding: 0em 0em 0em 0.5em;
+}
+
+#barra-de-pesquisa{
+    display: flex;
+    width: 36em;
+    height: 2.5em;
+    margin: 0.5em 0em 0.5em 4em;
+    border-radius: 9.375em;
+    background-color: #F8F8F8;
+    font-size: 1em;
+    font-weight: 400;
+    color:#D1D1D1;
+}
+
+#barra-txt{
+    padding: 0.5em 6.5625em 0.5rem 1em;
+}
+
+#icon-lupa{
+    height: 1.5em;
+    position: relative;
+    top: 0.5em;
+    left: 3.125em;
+    bottom: 0.5em;
+}
+
+#icon-micro{
+    padding: 1em 0em 1em 1em;
+    height: 1.5em;
+}
+
+/* Menus (esquerdo e de músic) */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #000000;
+    position: fixed;
+}
+
+.menu-item, #profile {
+    width: 40%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 30px;
+}
+
+.menu-item:hover {
+    filter: brightness(120%);
+}
+
+#liked-songs, #history {
+    margin-top: 28px;
+}
+
+#main-menu {
+    top: 0;
+    width: 112px;
+    height: 100vh;
+    background-color: #000000;
+    border-right: solid;
+    border-right-color: #404040;
+}
+
+#profile {
+    width: 4em;
+    height: 4em;
+    background-image: url(assets/artistas/profile_pic_cadu116.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 28px;
+    margin-left: 20px;
+    border: solid;
+    border-width: 0.1em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#content-box {
+    margin-top: 1.6em;
+}
+
+#soul {
+    margin-left: 3rem;
+}
+
+#song-menu {
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center space-around;
+    width: 98.3vw;
+    height: 7.6em;
+    bottom: 0;
+    margin: 0;
+    border: 3px solid #404040;
+    border-bottom: none;
+    border-top-left-radius: 2.2em;
+    border-top-right-radius: 2.2em;
+}
+
+    #capa {
+        height: 5.6em;
+        width: 5.6em;
+        margin: 5px;
+        background-image: url(assets/musicas/justlikethis.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 2em;
+        top: 0.2em;
+    }
+
+    #title {
+        position: relative;
+        top: 2em;
+        left: 2.9em;
+    }
+
+    #banda {
+        font-style: italic;
+        color: rgba(248, 248, 248, 0.6);
+        position: relative;
+        top: 4em;
+        left: -10.7em;
+    }
+
+    #centro {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #barra-musica {
+        position: relative;
+        top: -0.4em;
+        margin-left: 5.5em;
+    }
+
+    #colunm3 {
+        display: flex;
+        position: relative;
+        left: 5.5em;
+        gap: 47.2em;
+    }
+
+    #column1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        position: relative;
+        top: 0.8em;
+        right: 3.2em;
+        gap: 1.6em;
+    }
+
+    #shuffle {
+        position: inherit;
+        right: 16.2em;
+    }
+
+    #loop {
+        position: inherit;
+        left: 17.6em;
+    }
+
+    #volume {
+        position: relative;
+        top: 0.5em;
+        left: 8em;
+    }
+
+    #direita {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 2.4em;
+
+        position: relative;
+        left: 15em;
+        top: -1.5em;
+    }
+
+/* Código principal */
+.musica-texto{
+    width: 23.1em;
+    height: 5.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.musicasrecentes{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5em;
+}
+
+.artista{
+    color: #D1D1D1;
+    font-size: 1.25em;
+    font-style: italic;
+    margin-top: 0em;
+}
+
+.musica{
+    font-size: 1.25em;
+    margin: 0em 0em 0.5em 0em;
+    
+}
+
+.imagensum{
+    width: 5.5em;
+    height: 5.5em;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1.5em;
+}
+
+.titulosgrandes{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0em 1em 0em 1em;
+}
+
+#tempo{
+    color: #ABD2EF;
+    font-style: italic;
+    font-size: 1.25em;
+    margin: 2em 0em 2em 1.5em;
+}
+
+#titulo2{
+    margin-top: 4em;
+}
+
+#pesquisasrecentes{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    text-align: center;
+    margin: 1.5em 0em 0em 1em;
+}
+
+.musicaimagem{
+    width: 11.5em;
+    height: 11.5em;
+}
+
+.artistasimagem{
+    width: 11.5em;
+    height: 11.3125em;
+}
+
+.informaçoes{
+    margin-right: 6em;
+    margin-left: 1em;
+}
+
+.pontinhos{
+    width: 0.50125em;
+    height: 2.0625em;
+    text-align: center;
+    padding-top: 1.71875em;
+    padding-bottom: 1.71875em;
+    margin-left: -3em;
+}
+
+.generos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    margin-bottom: 3.5em;
+    margin-left: 1.5em;
+}
+
+#titulo3{
+    margin-bottom: 2.5em;
+    margin-top: 3.5em;
+}
+
+.txtpesquisas{
+    font-size: 1.25em;
+    margin-top: 0.875em;
+}
+
+.txt-generos{
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.625em;
+    text-align: center;
+}
+
+#ver-tudo{
+    color: #ABD2EF;
+    font-size: 0.875em;
+    padding-top: 1.3em;
+}

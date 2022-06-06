@@ -5,41 +5,217 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>SoundSoul</title>
+        <title>Soul</title>
     </head>
     <body>
         <aside class="menu" id="main-menu">
-            <div class="menu-item" id="profile">
-
-            </div>
-
-            <div class="menu-item" id="home">
-                <img src="assets/icons/home.svg" alt="Home">
-            </div>
-
-            <div class="menu-item" id="search">
-                <img src="assets/icons/lupa.svg" alt="Lupa">
-            </div>
-
-            <div class="menu-item" id="library">
-                <img src="assets/icons/biblioteca.svg" alt="Biblioteca">
-            </div>
-
-            <div class="menu-item" id="liked-songs">
-                <img src="assets/icons/musicas_curtidas.svg" alt="Curtidas">
-            </div>
-
-            <div class="menu-item" id="make-playlist">
-                <img src="assets/icons/create.svg" alt="">
-            </div>
-
-            <div class="menu-item" id="history">
-                <img src="assets/icons/historico.svg" alt="Histórico">
+            <div id="content-box">
+                <div class="menu-item" id="profile">
+                </div>
+                <img src="assets/icons/icon_home_cheio.svg" alt="Home" class="menu-item" id="home">
+                <a href="search.html"><img src="assets/icons/lupa.svg" alt="Lupa" class="menu-item" id="search"></a>
+                <img src="assets/icons/biblioteca.svg" alt="Biblioteca" class="menu-item" id="library">
+                <img src="assets/icons/musicas_curtidas.svg" alt="Curtidas" class="menu-item" id="liked-songs">
+                <img src="assets/icons/create.svg" alt="" class="menu-item" id="make-playlist">
+                <a href="historico.html"><img src="assets/icons/historico.svg" alt="Histórico" class="menu-item" id="history"></a>
+                <img src="assets/icons/logo.png" alt="Soul" id="soul">
             </div>
         </aside>
-
-        <footer id="song-menu">
+        <!-- SEPARAÇÃO: menu esquerdo para main content -->
+        <main>
+            <h1>Bom dia, @cadu116!</h1>
             
+            <h2>Veja o que seus amigos estão escutando</h2>
+            <div class="separation" id="social">
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="self"></div>
+                    <p>você</p>
+                </div>
+                <a href="hub-social.html">
+                    <div class="caixa-artista">
+                        <div class="imagem-artista" id="liza"></div>
+                        <p>@lizafss</p>
+                    </div>
+                </a>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="deivid"></div>
+                    <p>@mr.w</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="izalima">
+                    </div>
+
+                    <p>@izaslima</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="mari">
+                    </div>
+
+                    <p>@maripera</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="patrick"></div>
+                    <p>@tico.quina</p>
+                </div>
+            </div>
+
+            <h2>Suas principais playlistis</h2>
+            <div class="separation" id="principais">
+                <div class="caixa-album">
+                    <div class="albuns" id="imagine"></div>
+                    <p>Imagine.</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="play-home"></div>
+                    <p>Home.</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="benicio"></div>
+                    <p>Para acalmar o Benício</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="coldplay-fav"></div>
+                    <p>Coldplay favoritas</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="my-mix"></div>
+                    <p>Meu Mix</p>
+                </div>
+            </div>
+
+            <h2>Seus artistas mais amados</h2>
+            <div class="separation" id="amados">
+                <a href="artista.html">
+                    <div class="caixa-artista">
+                        <div class="imagem-artista" id="coldplay"></div>
+                        <p>Coldplay</p>
+                    </div>
+                </a>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="strokes"></div>
+                    <p>The Strokes</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="dionisio"></div>
+                    <p>Jovem Dionísio</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="dragons"></div>
+                    <p>Imagine Dragons</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="cranberries"></div>
+                    <p>The Cranberries</p>
+                </div>
+            </div>
+            
+            <h2>Mixes feitos para você</h2>
+            <div class="separation" id="mixes">
+                <div class="caixa-album">
+                    <div class="albuns" id="relax"></div>
+                    <p>Relax</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="pop-alturas"></div>
+                    <p>Pop nas alturas</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="classic-rock"></div>
+                    <p>Rock clássico</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="sextou"></div>
+                    <p>Sextou com festa</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="mistureba"></div>
+                    <p>Mistura semanal</p>
+                </div>
+            </div>
+            
+            <h2>Os mais escutados por seus amigos</h2>
+            <div class="separation" id="amigos">
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="terno"></div>
+                    <p>O Terno</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="taylor"></div>
+                    <p>Taylor Swift</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="sonic"></div>
+                    <p>Silk Sonic</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="jorge"></div>
+                    <p>Seu Jorge</p>
+                </div>
+                <div class="caixa-artista">
+                    <div class="imagem-artista" id="arctic"></div>
+                    <p>Arctic Monkeys</p>
+                </div>
+            </div>
+            
+            <h2>Quem você segue recomenda</h2>
+            <div class="separation" id="recomenda">
+                <div class="caixa-album">
+                    <div class="albuns" id="melhor-terno"></div>
+                    <p>Melhor do que parece</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="dawn-fm"></div>
+                    <p>Dawn FM</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="am"></div>
+                    <p>AM</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="lover"></div>
+                    <p>Lover</p>
+                </div>
+                <div class="caixa-album">
+                    <div class="albuns" id="album-sonic"></div>
+                    <p>An Evening With Silk Sonic</p>
+                </div>
+            </div>
+        </main>
+        <!-- SEPARAÇÃO: main para barra de música -->
+        <footer class="menu" id="song-menu">
+            <div id="esquerda" style="display: flex;">
+                <div id="capa">
+                    
+                </div>
+                <h3 id="title">Something Just Like This</h3>
+                <p id="banda">The Chainsmokers, Coldplay</p>
+            </div>
+
+            <div id="centro">
+                <div id="column1">
+                    <img src="assets/icons/shuffle.svg" alt="Aleatório" id="shuffle">
+                    <img src="assets/icons/previous.svg" alt="Música anterior" id="previous">
+                    <img src="assets/icons/pause.svg" alt="Pausa" id="pause">
+                    <img src="assets/icons/next.svg" alt="Próxima música" id="next">
+                    <img src="assets/icons/Loop.svg" alt="Loopar a música" id="loop">
+                </div>
+
+                <div id="column2">
+                    <img src="assets/icons/barra_musica.svg" alt="Barra de tempo da música" id="barra-musica">
+                    <img src="assets/icons/volume.svg" alt="Volume" id="volume">
+                </div>
+
+                <div id="colunm3">
+                    <p id="start">1:03</p>
+                    <p id="end">4:07</p>
+                </div>
+            </div>
+
+            <div id="direita">
+                <img src="assets/icons/coracao_cheio.svg" alt="Curtida" id="coracao-cheio">
+                <img src="assets/icons/microfone.svg" alt="Letras" id="microfone">
+                <img src="assets/icons/screen.svg" alt="Conectar dispositivo" id="screen">
+            </div>
         </footer>
     </body>
 </html>
