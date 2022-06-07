@@ -126,7 +126,7 @@ header{
 }
 
 #soul {
-    margin-left: 3rem;
+    margin-left: 1.8rem;
 }
 
 #song-menu {
@@ -144,88 +144,92 @@ header{
     border-top-right-radius: 2.2em;
 }
 
-    #capa {
-        height: 5.6em;
-        width: 5.6em;
-        margin: 5px;
-        background-image: url(assets/musicas/justlikethis.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: relative;
-        left: 2em;
-        top: 0.2em;
-    }
+#capa {
+    height: 5.6em;
+    width: 5.6em;
+    margin: 5px;
+    background-image: url(assets/musicas/justlikethis.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 2em;
+    top: 0.2em;
+}
 
-    #title {
-        position: relative;
-        top: 2em;
-        left: 2.9em;
-    }
+#title {
+    position: relative;
+    top: 2em;
+    left: 2.9em;
+}
 
-    #banda {
-        font-style: italic;
-        color: rgba(248, 248, 248, 0.6);
-        position: relative;
-        top: 4em;
-        left: -10.7em;
-    }
+#banda {
+    font-style: italic;
+    color: rgba(248, 248, 248, 0.6);
+    position: relative;
+    top: 4em;
+    left: -10.7em;
+}
 
-    #centro {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
+a {
+    color: rgba(248, 248, 248, 0.6);
+    text-decoration: none;
+    text-transform: none;
+}
 
-    #barra-musica {
-        position: relative;
-        top: -0.4em;
-        margin-left: 5.5em;
-    }
+#centro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 
-    #colunm3 {
-        display: flex;
-        position: relative;
-        left: 5.5em;
-        gap: 47.2em;
-    }
+#barra-musica {
+    position: relative;
+    top: -0.4em;
+    margin-left: 5.5em;
+}
 
-    #column1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        position: relative;
-        top: 0.8em;
-        right: 3.2em;
-        gap: 1.6em;
-    }
+#colunm3 {
+    display: flex;
+    position: relative;
+    left: 5.5em;
+    gap: 47.2em;
+}
 
-    #shuffle {
-        position: inherit;
-        right: 16.2em;
-    }
+#column1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 0.8em;
+    right: 3.2em;
+    gap: 1.6em;
+}
 
-    #loop {
-        position: inherit;
-        left: 17.6em;
-    }
+#shuffle {
+    position: inherit;
+    right: 16.2em;
+}
 
-    #volume {
-        position: relative;
-        top: 0.5em;
-        left: 8em;
-    }
+#loop {
+    position: inherit;
+    left: 17.6em;
+}
 
-    #direita {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        gap: 2.4em;
+#volume {
+    position: relative;
+    top: 0.5em;
+    left: 8em;
+}
 
-        position: relative;
-        left: 15em;
-        top: -1.5em;
-    }
+#direita {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2.4em;
+    position: relative;
+    left: 15em;
+    top: -1.5em;
+}
 
 /* Código principal */
 .musica-texto{

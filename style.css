@@ -90,6 +90,10 @@ body {
     border-top-right-radius: 2rem;
 }
 
+#song-menu > a {
+    color: rgba(248, 248, 248, 0.6);
+}
+
 #capa {
     height: 5.6rem;
     width: 5.6rem;
