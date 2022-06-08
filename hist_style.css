@@ -14,7 +14,7 @@ body{
     font-family: Be Vietnam Pro;
     color: #F8F8F8;
     background-color: #12130F;
-    background-image: url(/assets/background_flex.png);
+    background-image: url(assets/background_flex.png);
     background-size: 120% 100%;
 }
 
@@ -23,11 +23,13 @@ header{
     width: 90.52vw;
     height: 5.6rem;
     background-color: #000000;
-    border-bottom: 1px solid #D1D1D1;
+    border-bottom: solid #404040;
     margin: 0rem 0rem 0rem 11.2rem;
     display: flex;
     position: fixed;
+    z-index: 2;
 }
+
 #header-dimen{
     width: 90.52vw;
     height: 5.6rem;

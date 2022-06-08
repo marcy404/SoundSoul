@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
 
+:root {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +22,7 @@ header{
     width: 90.52vw;
     height: 3.5em;
     background-color: #000000;
-    border-bottom: 1px solid #D1D1D1;
+    border-bottom: solid #404040;
     margin: 0em 0em 0em 7em;
     display: flex;
     position: fixed;
@@ -248,8 +252,8 @@ a {
     background-color: #C233FF;
     justify-content: center;
     text-align: center;
-    height: 2.5em;
-    width: 6.25em;
+    height: 2.5rem;
+    width: 6.25rem;
     margin: 0.5em;
     font-weight: 900;
     display: flex;
@@ -257,10 +261,18 @@ a {
 
 }
 
+.botaoinicio:hover {
+    filter: brightness(80%);
+}
+
 .botaoiniciociruclo{
     width: 2.5em;
     height: 2.5em;
     margin-right: 0.5em;
+}
+
+.botaoiniciociruclo:hover {
+    filter: brightness(80%);
 }
 
 .discografiaimg{
@@ -374,6 +386,10 @@ a {
     font-weight: 600;
 }
 
+.botoesdiscografia:hover {
+    filter: brightness(80%);
+}
+
 #botoes2{
     display: flex;
     flex-direction: row;
@@ -483,6 +499,8 @@ a {
     align-items: center;
     margin: 3em 1.5em 2em 0em;
 }
+
+
 
 #botão-exclusivo-premium{
     font-size: 1em;
